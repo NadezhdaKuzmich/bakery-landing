@@ -1,0 +1,16 @@
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary-light);
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-normal);
+  background: var(--color-brand-normal);
+  padding: 16px 32px;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background: transparent;
+}
