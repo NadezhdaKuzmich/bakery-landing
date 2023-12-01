@@ -1,0 +1,26 @@
+.input {
+  &__control {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    background: transparent;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    padding: 16px 42px;
+
+    &:focus {
+      border-color: var(--color-brand-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.17;
+      color: var(--color-secondary-dark);
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}

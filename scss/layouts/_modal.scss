@@ -10,12 +10,12 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
   transition: opacity 0.3s, visibility 0.3s;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -28,10 +28,18 @@
   border-radius: 16px;
   padding: 128px;
   overflow-y: auto;
-}
 
-.modal-btn-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
+  &__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  &__form-field {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    margin: 0 auto 24px;
+  }
 }

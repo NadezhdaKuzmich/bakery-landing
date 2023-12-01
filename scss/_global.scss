@@ -5,13 +5,17 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--color-primary-dark);
   background: var(--color-primary-light);
   margin: 0;
+
+  @media screen and (min-width: $bp-middle) {
+    font-size: 16px;
+  }
 }
 
 h1,
