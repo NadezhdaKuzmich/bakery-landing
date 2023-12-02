@@ -13,11 +13,7 @@
   );
   border-radius: 16px;
   padding: 24px;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  overflow: hidden;
 
   &__image {
     position: absolute;
@@ -36,5 +32,9 @@
   &__text {
     font-size: 14px;
     font-weight: 300;
+
+    p {
+      margin: 0;
+    }
   }
 }

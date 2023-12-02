@@ -1,26 +1,85 @@
 .contact-section {
-  padding-bottom: 96px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
 
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__title {
-    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    max-width: 500px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 0 42px;
+    }
   }
 
   &__form-field {
-    margin-bottom: 24px;
+    max-width: 500px;
+    margin: 0 auto 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 605px;
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
-    margin: 0 auto 16px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__form-terms {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 
   &__map {
+    height: 176px;
     flex-shrink: 0;
     border: none;
     border-radius: 16px;
+    margin: 0 -24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+      height: 500px;
+      margin: auto;
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      height: 595px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+    }
   }
 }

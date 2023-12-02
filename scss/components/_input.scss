@@ -6,7 +6,11 @@
     background: transparent;
     border: 1px solid var(--color-secondary-dark);
     border-radius: 8px;
-    padding: 16px 42px;
+    padding: 10px 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+    }
 
     &:focus {
       border-color: var(--color-brand-normal);
@@ -15,8 +19,12 @@
 
     &::placeholder {
       font-size: 16px;
-      line-height: 1.17;
+      line-height: 1.5;
       color: var(--color-secondary-dark);
+
+      @media screen and (min-width: $bp-tablet) {
+        line-height: 1.17;
+      }
     }
 
     &:focus::placeholder {
