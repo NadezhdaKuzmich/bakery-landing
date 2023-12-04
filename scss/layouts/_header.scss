@@ -23,6 +23,16 @@
     gap: 40px;
   }
 
+  &__img {
+    max-width: 72px;
+    max-height: 38px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 114px;
+      max-height: 56px;
+    }
+  }
+
   &__menu {
     display: none;
 
