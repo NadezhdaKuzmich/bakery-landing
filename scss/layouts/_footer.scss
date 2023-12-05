@@ -13,27 +13,40 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
     background-repeat: no-repeat;
   }
 
   &::before {
-    width: 180px;
-    height: 120px;
+    width: 112px;
+    height: 274px;
+    top: 84px;
     left: 0;
-    background-image: url("../images/decor-bread-small.png");
+    background-image: url("../images/decor-bread-small-mob.png");
+    background-size: 112px 274px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 180px;
+      height: 120px;
+      top: auto;
+      bottom: 0;
+      background-image: url("../images/decor-bread-small.png");
+      background-size: 180px 120px;
+    }
   }
 
   &::after {
-    width: 112px;
+    width: 136px;
     height: 122px;
     right: 0;
-    background-image: url("../images/decor-bread-large.png");
+    bottom: 0;
+    background-image: url("../images/decor-bread-large-mob.png");
+    background-size: 136px 122px;
 
     @media screen and (min-width: $bp-tablet) {
       width: 380px;
       height: 190px;
-      right: 0;
+      background-image: url("../images/decor-bread-large.png");
+      background-size: 380px 190px;
     }
   }
 
