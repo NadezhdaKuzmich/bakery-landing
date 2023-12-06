@@ -8,8 +8,12 @@
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 10px;
   transition: opacity 0.3s, visibility 0.3s;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 20px;
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -26,51 +30,117 @@
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 16px;
-  padding: 48px;
+  padding: 20vw 6vw;
   overflow-y: auto;
 
-  &__info {
-    text-align: center;
-    margin-bottom: 62px;
-  }
-
-  &__title {
-    font-size: 64px;
-    line-height: 1.3;
-    margin-bottom: 8px;
-  }
-
-  &__description {
-    color: var(--color-brand-dark);
+  @media screen and (min-width: $bp-tablet) {
+    padding: 10vw 138px;
   }
 
   @media screen and (min-width: $bp-middle) {
     padding: 10vh 138px;
   }
 
+  &__info {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      margin-bottom: 62px;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 52px;
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    color: var(--color-brand-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
   &__btn-close {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 20px;
     fill: var(--color-primary-dark);
     background: transparent;
     border: none;
     cursor: pointer;
+
+    @media screen and (min-width: $bp-middle) {
+      top: 40px;
+      right: 40px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__close-icon {
+    width: 18px;
+    height: 18px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
   }
 
   &__form-field {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: $bp-middle) {
+      margin-bottom: 32px;
+    }
   }
 
   &__button {
-    margin: 0 auto 24px;
+    width: 100%;
+    margin: 0 auto 14px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: auto;
+      margin-bottom: 24px;
+    }
   }
 
   &__img {
     position: absolute;
     bottom: 1vh;
     right: 0;
-    width: 180px;
-    height: 240px;
+    width: 140px;
+    height: 180px;
+
+    @media screen and (min-width: $bp-middle) {
+      width: 180px;
+      height: 240px;
+    }
   }
 }
