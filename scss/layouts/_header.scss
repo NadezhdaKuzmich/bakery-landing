@@ -27,7 +27,7 @@
     max-width: 72px;
     max-height: 38px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-middle) {
       max-width: 114px;
       max-height: 56px;
     }
@@ -36,11 +36,15 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-middle) {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       flex-grow: 1;
       gap: 64px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: center;
     }
   }
 
@@ -60,7 +64,7 @@
     border: none;
     padding: 0;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-middle) {
       display: none;
     }
   }
