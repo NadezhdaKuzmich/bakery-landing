@@ -43,7 +43,7 @@
     font-weight: 300;
     color: var(--color-primary-dark);
     text-decoration: none;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.02);
@@ -52,7 +52,7 @@
 
   &__img-back {
     position: absolute;
-    top: 65vh;
+    top: 440px;
     right: 0;
     width: 180px;
     height: 240px;
