@@ -86,6 +86,10 @@
     border: none;
     cursor: pointer;
 
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+
     @media screen and (min-width: $bp-middle) {
       top: 40px;
       right: 40px;

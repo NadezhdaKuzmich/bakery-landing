@@ -51,6 +51,10 @@
   &__button {
     display: none;
 
+    &:hover {
+      background: rgb(255 239 239 / 33%);
+    }
+
     @media screen and (min-width: $bp-desktop) {
       display: block;
     }
@@ -63,6 +67,11 @@
     background: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
 
     @media screen and (min-width: $bp-middle) {
       display: none;

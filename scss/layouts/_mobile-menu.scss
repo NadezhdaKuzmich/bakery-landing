@@ -20,6 +20,10 @@
     background: transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
   }
 
   &__nav {
