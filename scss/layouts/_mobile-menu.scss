@@ -61,5 +61,10 @@
     width: 180px;
     height: 240px;
     z-index: 9999;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: auto;
+      bottom: 0;
+    }
   }
 }
